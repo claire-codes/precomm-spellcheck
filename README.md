@@ -1,0 +1,1 @@
+You need to exit with a code of 1 to prevent it committing.

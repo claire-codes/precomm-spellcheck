@@ -1,0 +1,17 @@
+{
+  "name": "precomm-hook",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pre-commit": "./hook.sh",
+    "pre-commit-msg": "echo 'Me run now'"
+  },
+  "pre-commit": ["pre-commit-msg", "pre-commit"],
+  "keywords": [],
+  "author": "Claire Parker",
+  "license": "MIT",
+  "devDependencies": {
+    "pre-commit": "^1.1.3"
+  }
+}
