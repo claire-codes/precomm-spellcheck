@@ -2,9 +2,8 @@
   "name": "precomm-spellcheck",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "pre-commit": "./hook.sh",
+    "pre-commit": "./precomm-spellcheck.sh",
     "pre-commit-msg": "echo 'Running pre-commit spellcheck'"
   },
   "pre-commit": ["pre-commit-msg", "pre-commit"],

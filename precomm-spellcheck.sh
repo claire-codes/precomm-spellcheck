@@ -8,7 +8,7 @@ typo_exists=false
 # It pipes this list to grep which removes the name of this file from it:
 # This file will contain the typo to look for and we therefore don't need to
 # fail the commit for it.
-for f in `git diff --name-only --diff-filter=AM --cached | grep -v hook.sh`
+for f in `git diff --name-only --diff-filter=AM --cached | grep -v precomm-spellcheck.sh`
 do
     if grep -iq "$typo" $f # -q means minimal printing, -i ignore case
     then
