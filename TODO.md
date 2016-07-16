@@ -2,7 +2,7 @@
 * Open only modified files in directory: need to exclude deleted ones somehow
 * Or add to list and carry on looking
 * Bonus: only check modified lines
-
+* Pass in multiple typos to check
 
 Done
 * Read file contents

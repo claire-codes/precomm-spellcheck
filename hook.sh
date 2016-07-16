@@ -1,9 +1,11 @@
 #/usr/bin/env bash
 
-for f in `git diff --name-only`
+typo="OK"
+# This lists all the staged files about to committed but ignores the deleted ones
+for f in `git diff --name-only --diff-filter=AM --cached`
 do
     echo "Processing $f"
-    if grep -Fq "OK" $f
+    if grep -Fq "$typo" $f # -F means interpret pattern as fixed string and not regex, -q means minimal printing
     then
         echo "You found me"
     else
