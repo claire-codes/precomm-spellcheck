@@ -13,7 +13,7 @@ for f in `git diff --name-only --diff-filter=AM --cached | grep -v $this_filenam
 do
     if grep -iq "$typo" $f # -q means minimal printing, -i ignore case
     then
-        echo "Check $f for a spelling mistake"
+        echo "Check *** $f *** for a spelling mistake"
         typo_exists=true
     # else
     #     echo "$f is clean"
@@ -23,5 +23,5 @@ done
 if [ "$typo_exists" = true ]; then
     exit 1
 else
-    echo "Checked your files for spelling mistakes and found none"
+    echo "Checked your files for spelling mistakes and found none :-)"
 fi
